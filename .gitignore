@@ -28,5 +28,12 @@
 *.x86_64
 *.hex
 
+# Compressed files
+*.zip
+
 # Debug files
 *.dSYM/
+
+# Folders
+build
+bin
