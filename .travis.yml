@@ -12,13 +12,13 @@ matrix:
       dist: bionic
       sudo: required
       arch: arm64
-    - name: "linux-i386"
+    - name: "linux-arm64"
       os: linux
-      services:
-        - docker
-    - name: osx-multiarch
-      os: osx
-      osx_image: xcode11.3
+      dist: bionic
+      sudo: required
+      arch: arm64-graviton2
+      virt: lxd
+      group: edge
 
 language: c
 
