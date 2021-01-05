@@ -27,6 +27,7 @@ before_install:
   - sudo apt-get install -qq lv2-dev libfftw3-dev python3-pip ninja-build python3-setuptools zip
   - sudo -H pip3 install --upgrade pip
   - sudo -H pip3 install meson
+  - wget http://www.sbeams.org/sample_data/Microarray/Affy_test_data.tar.gz
   - if [ "$TRAVIS_JOB_NAME" == "osx-multiarch" ]; then 
       brew update;
       pip3 install --upgrade pip;
